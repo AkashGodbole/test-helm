@@ -7,6 +7,6 @@ metadata:
   labels:
     {{- include "opentelemetry-collector.labels" . | nindent 4 }}
 data:
-  relay: |
+  collector.yaml: |
     {{- include "opentelemetry-collector.deploymentConfig" . | nindent 4 -}}
 {{- end }}
